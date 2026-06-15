@@ -32,3 +32,6 @@ Modify `./config/global_config.py` to match your data directory.
 ```bash
 python main.py --image_size 512 --model dinov2_vits14
 ```
+## Results
+Qualitative comparison of anomaly localization results between xLSTM-AD and competing methods.
+![Framework](./fig/tu1.png)
