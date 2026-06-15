@@ -9,7 +9,7 @@
 
 ## Framework
 
-![Framework](./assets/framework.png)
+![Framework](./fig/tu2.png)
 
 ## Install
 
