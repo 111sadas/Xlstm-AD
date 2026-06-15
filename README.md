@@ -35,7 +35,10 @@ python main.py --image_size 512 --model dinov2_vits14
 ## Results
 Qualitative comparison of anomaly localization results between xLSTM-AD and competing methods.
 ![Framework](./fig/tu1.png)
-
+Pixel-Level Anomaly Detection Performance (AUROC% / Max-F1% / AP%)
+![Framework](./fig/b1.png)
+Image-Level Anomaly Detection Performance (AUROC% / Max-F1% / AP%)
+![Framework](./fig/b2.png)
 ## Acknowledgement
 This project is developed based on the ideas and open-source implementation of VarAD. We sincerely thank the authors for their valuable contributions to the anomaly detection community.
 
