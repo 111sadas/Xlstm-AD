@@ -1,0 +1,1 @@
+DATA_ROOT = '/home/ubuntu/public_d/zjh/datasets'
