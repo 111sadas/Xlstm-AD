@@ -11,6 +11,14 @@
 
 ![Framework](./fig/tu2.png)
 
+## Features
+
+1)xLSTM-Based Autoregressive Backbone: We propose integrating xLSTM's matrix-valued memory cells and exponential gating mechanisms into the visual autoregressive AD paradigm, enabling more expressive sequential modeling of complex spatial dependencies while preserving linear computational complexity — directly addressing the information bottleneck of existing SSM-based approaches.
+
+2)Systematic Framework Design: We develop xLSTM-AD, an end-to-end framework that combines hierarchical DINOv2-based tokenization with an optimized xLSTM predictor, effectively bridging visual representation learning and sequential density estimation for precise anomaly localization.
+
+3)Empirical Validation: Comprehensive experiments on four widely used industrial benchmarks — MVTec AD, VisA, BTAD, and DTD-Synthetic — demonstrate that xLSTM-AD consistently achieves state-of-the-art performance, with image-level AUROC scores of 96.8%, 92.0%, 96.5%, and 99.2%, respectively, confirming the advantage of matrix-valued memory for both local defect localization and global anomaly discrimination.
+
 ## Install
 
 ```bash
@@ -24,28 +32,3 @@ Modify `./config/global_config.py` to match your data directory.
 ```bash
 python main.py --image_size 512 --model dinov2_vits14
 ```
-
-## Performance under 1024 Resolution
-
-![Performance](./assets/performance.png)
-
-## BibTex
-
-```bibtex
-@ARTICLE{VarAD,
-  author={Cao, Yunkang and Yao, Haiming and Luo, Wei and Shen, Weiming},
-  journal={IEEE Transactions on Industrial Informatics}, 
-  title={VarAD: Lightweight High-Resolution Image Anomaly Detection via Visual Autoregressive Modeling}, 
-  year={2025},
-  volume={21},
-  number={4},
-  pages={3246-3255},
-  keywords={Visualization;Predictive models;Adaptation models;Anomaly detection;Reactive power;Transformers;Image reconstruction;Computational modeling;Inspection;Feature extraction;Autoregressive modeling;image anomaly detection;token prediction},
-  doi={10.1109/TII.2024.3523574}}
-```
-
-## Index Terms
-
-- Autoregressive modeling
-- Image anomaly detection
-- Token prediction
